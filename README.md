@@ -1,6 +1,6 @@
 # blog-api
 blog-api is contain two endpoint
 1. Create
-2. Get by title
+2. Get content by title
 
-This project use grpc with golang and S3 for save file.
+This project use grpc, AWS-S3 and Mongodb.
