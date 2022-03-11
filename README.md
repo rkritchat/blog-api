@@ -4,3 +4,4 @@ blog-api is contain two endpoint
 2. Get content by title
 
 This project use grpc, AWS-S3 and Mongodb.
+Ps. client folder is for testing only.
