@@ -1,0 +1,40 @@
+syntax = "proto3";
+package blog;
+option go_package = "/internal/proto";
+
+message CommonResult {
+  string status = 1;
+  string message = 2;
+}
+message Content{
+  string message = 1;
+  string filename = 2;
+  bytes image = 3;
+}
+message CreateReq{
+  string title = 1;
+  repeated Content content = 2;
+}
+message CreateResp{
+  CommonResult result = 1;
+}
+
+message AllContentReq {
+
+}
+message AllContentResp {
+
+}
+
+message ContentByTitleReq{
+  string title = 1;
+}
+message ContentByTitleResp{
+  string title = 1;
+  repeated Content content = 2;
+}
+
+service BlogService {
+  rpc Create(CreateReq) returns (CreateResp) {};
+  rpc GetContentByTitle(ContentByTitleReq) returns (ContentByTitleResp) {};
+}
