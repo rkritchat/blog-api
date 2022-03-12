@@ -1,5 +1,5 @@
 # blog-api
-blog-api is contain two endpoint
+blog-api is contain two endpoints
 1. Create
 2. Get content by title
 
